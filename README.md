@@ -2,6 +2,8 @@
 
 This is an arcade project that I completed in my second CS class. It was the culmination of our study of the Go Programming Language and concurrency, and takes advantage of concurrency to create an arcade server where different processes may register their games and remove their games concurrently.
 
+It also includes my implementation of a two-player game version of Egyptian Rat Screw, which heavily relies on close timing between two people hitting specific keys upon certain cards appearing.
+
 arcade:
 
   All you need to do to get arcade running is to run its code:
