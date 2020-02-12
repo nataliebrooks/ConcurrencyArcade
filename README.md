@@ -26,6 +26,12 @@ Create a new folder titled "cs221" in the src folder, then copy the cs221.go fil
 
 Running the Program:
 
+NOTE: ers_server.go and ers_player.go are the version of the game that
+run without the arcade, but the server must be run first and then the player:
+
+  "go run ers_server.go localhost 8888"
+  "go run ers_player.go localhost 8888"
+
 Arcade:
 
   You must first start the arcade running so that it can host the games.
@@ -35,12 +41,15 @@ Arcade:
 
   In order to get games to register you just run their code:
   (you will be prompted for machine (localhost) and port (8888))
+  
      "go run echoservice.go" 
      "go run ers_server_arc.go"
      
   Once you have registered the game to the arcade, 
   all you have to do is run the client code:
+  
      "go run echoclient.go"
      "go run ers_client_.go"
+     
   It will automatically begin running the game so you can
   play!
